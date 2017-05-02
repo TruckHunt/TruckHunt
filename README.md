@@ -7,7 +7,7 @@ Browse nearby food trucks in San Francisco; order food ahead of time so that it'
 ## Team
 
   - Matt Schmitz
-  - Benicio Pedido
+  - Benicio Peinado
   - Sam Zoll
   - Michael Burton
 
