@@ -13,7 +13,6 @@ module.exports = (req, res) => {
     order_note,
     menuItems
   };
-  // TODO: validate order - make sure there are some menu items, for example
 
   const filteredMenuItems = utils.removeDuplicateOrders(menuItems);
   order.menuItems = filteredMenuItems;
