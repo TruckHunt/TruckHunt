@@ -36,7 +36,6 @@ module.exports = (req, res) => {
       }
       stripe.charges.create(chargeParams, (err, charge) => { // eslint-disable-line no-unused-vars
         if (err) {
-          // const { message, statusCode, requestId } = err.raw; // uncomment to get more info on order
           console.log('error charging card charge', err);
           res.statusMessage = 'Error processing payment';
           res.sendStatus(402);
