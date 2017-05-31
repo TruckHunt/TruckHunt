@@ -1,6 +1,10 @@
 # TruckHunt SF
 
-Browse nearby food trucks in San Francisco; order food ahead of time so that it's ready for pickup when you arrive. Vendors can sign up through our vendor portal to accept payment and manage new and past orders.
+Browse nearby food trucks in San Francisco; order food ahead of time so that it's ready for pickup when you arrive. Vendors can sign up through our vendor portal to accept payment and manage new and past orders. 
+
+[Video Demo](https://www.youtube.com/watch?v=iVUxqjB9uu4)
+
+![Homepage Screenshot](screenshots/truck-hunt-static-8in.png "Homepage")
 
 ## Team
 
