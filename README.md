@@ -1,6 +1,10 @@
 # TruckHunt SF
 
-Browse nearby food trucks in San Francisco; order food ahead of time so that it's ready for pickup when you arrive. Vendors can sign up through our vendor portal to accept payment and manage new and past orders.
+Browse nearby food trucks in San Francisco; order food ahead of time so that it's ready for pickup when you arrive. Vendors can sign up through our vendor portal to accept payment and manage incoming and past orders. 
+
+[Video Demo](https://www.youtube.com/watch?v=iVUxqjB9uu4)
+
+![Homepage Screenshot](screenshots/truck-hunt-static-8in.png "Homepage")
 
 ## Team
 
@@ -25,7 +29,7 @@ Browse nearby food trucks in San Francisco; order food ahead of time so that it'
 
 Truck schedules and permit information comes from [SF Open Data], which publishes a variety of data for mobile food vendors in SF.
 
-If you are interested in testing and developement you can find sample data in JSON format within [database/data](database/data).  Once you have installed PostgreSQL you must seed the database. See Database section below. 
+If you are interested in testing and developement you can find sample data in JSON format within [database/data](database/data).  Once you have installed PostgreSQL you must seed the [database](#database). 
 
 ## Tech Stack
   - [React] with [React-Router] & [Redux]
@@ -43,21 +47,28 @@ This application utilizes the Stripe API to allow payments for both vendors and 
 This application uses a PostgreSQL database to access vendor and customer information. 
 
 To install postgres locally on OSX:
+```
 brew tap homebrew/services
 brew install postgres
 brew services start postgresql
 createdb toads
+```
 
 Once you've created your db run "npm run start-dev" to create all the db tables. Next navigate to the seedDatabase folder and run 
-
+```
 node seedVendors.js
 node seedSchedules.js.
 node seedMenus.js
 node seedReviews.js.  
+```
 
 This will populate your local db with real food-truck data and allow trucks to properly rendor on the map. The menu and review data is dummy data as we are currently building out functionality to allow vendors to upload their menus and customers to review trucks.
 
-If you decide to modify the schema you must run "dropdb toads" followed by the steps above.
+If you decide to modify the schema you will need to run
+```
+dropdb toads
+```
+followed by the steps above, before continuing.
 
 ## Testing
 
